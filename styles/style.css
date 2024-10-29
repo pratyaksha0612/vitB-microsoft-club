@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #e0f7fa;
+    background-color: #91d3f5;
     /* Light blue background */
     font-family: 'Montserrat', sans-serif;
     /* Elegant font */
@@ -11,7 +11,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #4a90e2;
+    background-color: #0b386c;
     /* Soft blue for the header */
     color: #fff;
     padding: 1rem;
@@ -44,7 +44,7 @@ nav a {
     /* Adjust height as desired */
     background: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2)),
         /* Light overlay */
-        linear-gradient(to right, #2762a6, #4c7a9f);
+        linear-gradient(to right, #1d4a7d, #2d638f);
     /* Crisscross gradient */
     position: relative;
     /* Allows positioning of child elements */
@@ -143,7 +143,7 @@ nav a {
 }
 
 .member-card {
-    background-color: #a1c7ec;
+    background-color: #83add7;
     /* White background for cards */
     border-radius: 8px;
     margin: 1rem;
@@ -177,11 +177,11 @@ nav a {
 
 /* Events Section */
 .events {
-    border: 1px solid #4a90e2;
+    border: 1px solid #041d3a;
     /* Border to match member section */
     border-radius: 20px;
     /* Larger border radius for rounded corners */
-    background-color: #ffffff;
+    background-color: #82bfd1;
     /* White background for contrast */
     padding: 2rem;
     /* Padding inside the section */
@@ -197,7 +197,7 @@ nav a {
 
 /* Event Card */
 .event-card {
-    border: 1px solid #e0e0e0;
+    border: 1px solid #170843;
     /* Light grey border for individual event card */
     border-radius: 10px;
     /* Rounded corners */
@@ -205,7 +205,7 @@ nav a {
     /* Increased padding inside event card */
     margin: 1.5rem 0;
     /* Increased margin between event cards */
-    background-color: #f9f9f9;
+    background-color: #9cb7ee;
     /* Light background color for event cards */
     text-align: left;
     /* Align text to the left */
@@ -238,7 +238,7 @@ nav a {
 
 /* Event Date */
 .event-date {
-    color: #555;
+    color: #283778;
     /* Grey color for event dates */
     font-style: italic;
     /* Italic style for date */
