@@ -86,30 +86,65 @@ nav a {
     margin-bottom: 1rem; /* Space below the photo */
 }
 
+/* Events Section */
+.events {
+    border: 1px solid #4a90e2; /* Border to match member section */
+    border-radius: 10px; /* Slightly larger border radius */
+    background-color: #ffffff; /* White background for contrast */
+    padding: 2rem; /* Padding inside the section */
+    margin: 2rem 1rem; /* Margin around the section */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+    animation: fadeIn 1s; /* Fade-in animation */
+}
+
 /* Event Card */
 .event-card {
-    border: 1px solid #7cb1ed; /* Border for individual event card */
-    border-radius: 8px; /* Rounded corners */
-    padding: 1rem; /* Padding inside event card */
-    margin: 1rem 0; /* Margin between event cards */
-    background-color: #f0f4ff; /* Light background color for event cards */
+    border: 1px solid #e0e0e0; /* Light grey border for individual event card */
+    border-radius: 10px; /* Rounded corners */
+    padding: 1.5rem; /* Increased padding inside event card */
+    margin: 1.5rem 0; /* Increased margin between event cards */
+    background-color: #b7d7f8; /* Light background color for event cards */
     text-align: left; /* Align text to the left */
-    transition: transform 0.3s; /* Smooth scaling effect on hover */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling effect and shadow on hover */
+    position: relative; /* Allow absolute positioning of elements */
 }
 
 .event-card:hover {
-    transform: scale(1.02); /* Slightly enlarge card on hover */
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
 
 /* Event Title */
 .event-title {
     color: #001f33; /* Dark blue color for event titles */
-    font-size: 1.5rem; /* Font size for event titles */
+    font-size: 1.75rem; /* Increased font size for titles */
+    margin-bottom: 0.5rem; /* Margin below title */
+    font-weight: bold; /* Bold font for titles */
+    text-transform: uppercase; /* Uppercase for elegance */
 }
 
 /* Event Date */
 .event-date {
     color: #555; /* Grey color for event dates */
+    font-style: italic; /* Italic style for date */
+    margin-bottom: 1rem; /* Margin below date */
+}
+
+/* Event Description */
+.event-description {
+    color: #333; /* Darker grey for description */
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-card {
+        margin: 1rem 0; /* Adjust margin for smaller screens */
+    }
+
+    .event-title {
+        font-size: 1.5rem; /* Adjust title size for smaller screens */
+    }
 }
 
 
