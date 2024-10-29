@@ -78,9 +78,11 @@ nav a {
 
 /* Member Photo */
 .member-photo {
-    width: 100%; /* Full width for photos */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for photos */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio while filling the space */
+    border-radius: 50%; /* Make photos circular */
+    margin-bottom: 1rem; /* Space below the photo */
 }
 
 /* Events Section */
