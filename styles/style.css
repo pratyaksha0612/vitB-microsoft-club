@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #91d3f5;
+    background-color: #c1ddeb;
     /* Light blue background */
     font-family: 'Montserrat', sans-serif;
     /* Elegant font */
@@ -44,8 +44,9 @@ nav a {
     /* Adjust height as desired */
     background: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2)),
         /* Light overlay */
-        linear-gradient(to right, #1d4a7d, #2d638f);
+        linear-gradient(to right, #1d4a7d, #1a4b73);
     /* Crisscross gradient */
+    background-size: cover; /* Cover to ensure full coverage */
     position: relative;
     /* Allows positioning of child elements */
     display: flex;
@@ -93,12 +94,13 @@ nav a {
 
 /* Additional styling for hero text */
 .hero h1 {
-    font-size: 3rem;
-    /* Large size for main heading */
-    color: white;
-    /* Change as per design */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    /* Optional text shadow for contrast */
+    font-size: 2.5rem; /* Adjust font size */
+    color: white; /* Change as per design */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow for contrast */
+    max-width: 80%; /* Set a maximum width for the header */
+    margin: 0 auto; /* Center the header */
+    text-align: center; /* Center the text */
+    animation-delay: 0.2s; /* Delay for main heading */
 }
 
 .hero p {
@@ -143,7 +145,7 @@ nav a {
 }
 
 .member-card {
-    background-color: #83add7;
+    background-color: #b3cfec;
     /* White background for cards */
     border-radius: 8px;
     margin: 1rem;
@@ -181,7 +183,7 @@ nav a {
     /* Border to match member section */
     border-radius: 20px;
     /* Larger border radius for rounded corners */
-    background-color: #82bfd1;
+    background-color: #97c3d0;
     /* White background for contrast */
     padding: 2rem;
     /* Padding inside the section */
@@ -205,7 +207,7 @@ nav a {
     /* Increased padding inside event card */
     margin: 1.5rem 0;
     /* Increased margin between event cards */
-    background-color: #9cb7ee;
+    background-color: #c1d2f4;
     /* Light background color for event cards */
     text-align: left;
     /* Align text to the left */
