@@ -46,7 +46,7 @@ nav a {
 .dark-blue-heading {
     color: #001f33; /* Darkest blue color for headings */
     font-size: 2.5rem; /* Increased size for better visibility */
-    margin-right: 2rem; /* Space between text and robot */
+    margin-right: 1rem; /* Reduced space between text and robot */
 }
 
 /* Members Section */
@@ -81,7 +81,6 @@ nav a {
     width: 150px; /* Fixed width */
     height: 150px; /* Fixed height */
     object-fit: cover; /* Maintain aspect ratio while filling the space */
-    border-radius: 50%; /* Make photos circular */
     margin-bottom: 1rem; /* Space below the photo */
 }
 
