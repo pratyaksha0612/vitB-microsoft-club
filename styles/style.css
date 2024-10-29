@@ -49,11 +49,51 @@ nav a {
     margin-right: 2rem; /* Space between text and robot */
 }
 
-/* Member and Events Sections */
-.members,
+/* Members Section */
+.members {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.members-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member-card {
+    background-color: #a1c7ec; /* White background for cards */
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+    width: 300px; /* Fixed width for member cards */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Transition for hover effect */
+    animation: slideIn 0.5s; /* Slide-in animation */
+}
+
+.member-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+/* Member Photo */
+.member-photo {
+    width: 100%; /* Full width for photos */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for photos */
+}
+
+/* Events Section */
 .events {
     padding: 2rem 1rem;
     text-align: center;
+}
+
+/* Event Countdown Timer */
+.countdown {
+    font-weight: bold; /* Make countdown bold */
+    color: #4a90e2; /* Color for countdown text */
+    font-size: 1.5rem; /* Font size for countdown */
 }
 
 /* Gallery Section */
