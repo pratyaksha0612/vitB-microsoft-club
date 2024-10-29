@@ -1,8 +1,8 @@
-/* General Page Background */
+/* General Styles */
 body {
-    background-color: #e0f7fa; /* Pastel blue */
+    background-color: #e0f7fa; /* Light blue background */
+    font-family: 'Montserrat', sans-serif; /* Elegant font */
     color: #333;
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -19,22 +19,44 @@ header nav a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* Hero Section */
 .hero {
     background-color: #bbdefb; /* Lighter pastel blue */
-    padding: 2rem;
+    padding: 3rem 1rem; /* Increased padding */
     text-align: center;
     border-radius: 8px;
-    margin: 1rem;
+    margin: 1rem 0; /* Margin between sections */
+}
+
+.hero h2 {
+    font-size: 2.5rem; /* Larger heading */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Larger font for the paragraph */
+}
+
+/* Events Section */
+.events {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 2rem; /* Larger heading */
 }
 
 /* Members Section */
 .members {
-    padding: 2rem;
+    padding: 2rem 1rem;
     text-align: center;
+}
+
+.members h2 {
+    font-size: 2rem; /* Larger heading */
 }
 
 .members-grid {
@@ -47,14 +69,13 @@ header nav a {
 
 /* Member Card Styling */
 .member-card {
-    background-color: #FFF;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 1.5rem;
-    width: 200px;
+    padding: 1rem;
+    width: 220px; /* Consistent width */
     transition: transform 0.3s ease;
-    animation: fadeIn 0.5s ease-in-out;
 }
 
 .member-card:hover {
@@ -66,7 +87,7 @@ header nav a {
     width: 100px; /* Fixed width */
     height: 100px; /* Fixed height */
     object-fit: cover; /* Crop images to fit */
-    border-radius: 50%;
+    border-radius: 50%; /* Circular photos */
     margin-bottom: 0.75rem;
 }
 
