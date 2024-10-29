@@ -32,9 +32,10 @@ nav a {
 
 /* Hero Section */
 .hero {
-    display: flex; /* Use flexbox to align robot and text */
+    display: flex; /* Use flexbox to align text and gradient */
     align-items: center; /* Center vertically */
-    background-color: #bbdefb; /* Lighter pastel blue */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), /* Light overlay */
+                linear-gradient(to right, #4a90e2, #bbdefb); /* Crisscross gradient */
     padding: 3rem 1rem; /* Increased padding */
     border-radius: 8px;
     margin: 1rem 0; /* Margin between sections */
@@ -46,22 +47,15 @@ nav a {
 .dark-blue-heading {
     color: #001f33; /* Darkest blue color for headings */
     font-size: 2.5rem; /* Increased size for better visibility */
-    margin-right: 1rem; /* Reduced space between text and robot */
+    margin-right: 1rem; /* Reduced space between text and gradient */
 }
 
-/* Robot Visual */
-.robot-visual {
-    display: flex;
-    justify-content: center; /* Center the robot */
-    margin-left: auto; /* Push to the right */
+/* Text Container */
+.text-container {
+    max-width: 50%; /* Limit width of the text container */
+    z-index: 1; /* Ensure text appears above gradient */
 }
 
-.robot-visual img {
-    max-width: 250px; /* Increased size of the robot image */
-    height: auto; /* Maintain aspect ratio */
-    animation: bounce 1s infinite alternate; /* Bounce animation */
-    margin-right: 0.5rem; /* Bring robot closer to text */
-}
 
 /* Members Section */
 .members {
