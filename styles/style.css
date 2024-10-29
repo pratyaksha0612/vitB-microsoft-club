@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #e0f7fa; /* Light blue background */
+    background-color: #c7f4fa; /* Light blue background */
     font-family: 'Montserrat', sans-serif; /* Elegant font */
     color: #333;
     margin: 0;
@@ -9,8 +9,8 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #4a90e2; /* Soft blue for the header */
-    color: #fff;
+    background-color: #236dc2; /* Soft blue for the header */
+    color: #040548;
     padding: 1rem;
     text-align: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
@@ -18,7 +18,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background-color: #bbdefb; /* Lighter pastel blue */
+    background-color: #93c6ef; /* Lighter pastel blue */
     padding: 3rem 1rem; /* Increased padding */
     text-align: center;
     border-radius: 8px;
@@ -26,10 +26,46 @@ header {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Members Card Hover Effect */
+/* Members Section */
+.members {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.members h2 {
+    font-size: 2rem; /* Larger heading */
+}
+
+.members-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/* Member Card Styling */
+.member-card {
+    background-color: #c7f3f1f8;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    width: 220px; /* Consistent width */
+    transition: transform 0.3s ease;
+}
+
 .member-card:hover {
     transform: scale(1.05);
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Consistent Photo Sizing */
+.member-photo {
+    width: 100px; /* Fixed width */
+    height: 100px; /* Fixed height */
+    object-fit: cover; /* Crop images to fit */
+    border-radius: 50%; /* Circular photos */
+    margin-bottom: 0.75rem;
 }
 
 /* Gallery Section */
@@ -68,4 +104,12 @@ header {
 .robot-visual svg {
     max-width: 100%; /* Responsive sizing */
     height: auto; /* Maintain aspect ratio */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #529df3;
+    color: #fafafa;
+    text-align: center;
+    padding: 1rem;
 }
