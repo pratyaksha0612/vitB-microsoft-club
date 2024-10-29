@@ -138,18 +138,6 @@ nav a {
     transform: scale(1.05); /* Zoom effect on hover */
 }
 
-/* Robot Visual */
-.robot-visual {
-    display: flex;
-    justify-content: center; /* Center the robot */
-    margin-left: auto; /* Push to the right */
-}
-
-.robot-visual img {
-    max-width: 150px; /* Reduced size of the robot image */
-    height: auto; /* Maintain aspect ratio */
-    animation: bounce 1s infinite alternate; /* Bounce animation */
-}
 
 /* Animations */
 @keyframes fadeIn {
