@@ -32,9 +32,10 @@ nav a {
 
 /* Hero Section */
 .hero {
+    display: flex; /* Use flexbox to align robot and text */
+    align-items: center; /* Center vertically */
     background-color: #bbdefb; /* Lighter pastel blue */
     padding: 3rem 1rem; /* Increased padding */
-    text-align: center;
     border-radius: 8px;
     margin: 1rem 0; /* Margin between sections */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -45,59 +46,20 @@ nav a {
 .dark-blue-heading {
     color: #001f33; /* Darkest blue color for headings */
     font-size: 2.5rem; /* Increased size for better visibility */
+    margin-right: 2rem; /* Space between text and robot */
 }
 
-/* Members Section */
-.members {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.members-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.member-card {
-    background-color: #fff; /* White background for cards */
-    border-radius: 8px;
-    margin: 1rem;
-    padding: 1rem;
-    width: 300px; /* Fixed width for member cards */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s; /* Transition for hover effect */
-    animation: slideIn 0.5s; /* Slide-in animation */
-}
-
-.member-card:hover {
-    transform: scale(1.05); /* Scale effect on hover */
-}
-
-/* Member Photo */
-.member-photo {
-    width: 100%; /* Full width for photos */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Rounded corners for photos */
-}
-
-/* Events Section */
+/* Member and Events Sections */
+.members,
 .events {
     padding: 2rem 1rem;
     text-align: center;
 }
 
-/* Event Countdown Timer */
-.countdown {
-    font-weight: bold; /* Make countdown bold */
-    color: #4a90e2; /* Color for countdown text */
-    font-size: 1.5rem; /* Font size for countdown */
-}
-
 /* Gallery Section */
 .gallery {
     display: grid; /* Use grid layout for better alignment */
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
     gap: 1rem; /* Space between grid items */
     margin-top: 2rem;
     padding: 2rem 1rem;
@@ -125,11 +87,11 @@ nav a {
 .robot-visual {
     display: flex;
     justify-content: center; /* Center the robot */
-    margin-top: 1rem; /* Add some space above */
+    margin-left: auto; /* Push to the right */
 }
 
 .robot-visual img {
-    max-width: 100%; /* Responsive sizing */
+    max-width: 150px; /* Reduced size of the robot image */
     height: auto; /* Maintain aspect ratio */
     animation: bounce 1s infinite alternate; /* Bounce animation */
 }
@@ -140,17 +102,6 @@ nav a {
         opacity: 0;
     }
     to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -166,13 +117,17 @@ nav a {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .members-grid {
-        flex-direction: column; /* Stack member cards on smaller screens */
-        align-items: center; /* Center the member cards */
+    .hero {
+        flex-direction: column; /* Stack robot and text on smaller screens */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
     }
 
-    .gallery-item img {
-        width: 100%; /* Make gallery images full width on small screens */
-        height: auto; /* Maintain aspect ratio */
+    .dark-blue-heading {
+        margin-right: 0; /* Remove margin for smaller screens */
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust for smaller screens */
     }
 }
