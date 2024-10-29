@@ -13,13 +13,7 @@ header {
     color: #fff;
     padding: 1rem;
     text-align: center;
-}
-
-header nav a {
-    color: #fff;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-weight: 600;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Hero Section */
@@ -29,72 +23,49 @@ header nav a {
     text-align: center;
     border-radius: 8px;
     margin: 1rem 0; /* Margin between sections */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.hero h2 {
-    font-size: 2.5rem; /* Larger heading */
+/* Members Card Hover Effect */
+.member-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-.hero p {
-    font-size: 1.2rem; /* Larger font for the paragraph */
-}
-
-/* Events Section */
-.events {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.events h2 {
-    font-size: 2rem; /* Larger heading */
-}
-
-/* Members Section */
-.members {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.members h2 {
-    font-size: 2rem; /* Larger heading */
-}
-
-.members-grid {
+/* Gallery Section */
+.gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    padding: 2rem 1rem;
 }
 
-/* Member Card Styling */
-.member-card {
-    background-color: #fff;
+.gallery-item {
+    margin: 1rem;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 1rem;
-    width: 220px; /* Consistent width */
+    overflow: hidden;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 300px; /* Fixed width for gallery images */
+    height: 200px; /* Fixed height for gallery images */
+    object-fit: cover; /* Maintain aspect ratio */
     transition: transform 0.3s ease;
 }
 
-.member-card:hover {
-    transform: scale(1.05);
+.gallery-item img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
 }
 
-/* Consistent Photo Sizing */
-.member-photo {
-    width: 100px; /* Fixed width */
-    height: 100px; /* Fixed height */
-    object-fit: cover; /* Crop images to fit */
-    border-radius: 50%; /* Circular photos */
-    margin-bottom: 0.75rem;
+.robot-visual {
+    display: flex;
+    justify-content: center; /* Center the robot */
+    margin-top: 1rem; /* Add some space above */
 }
 
-/* Footer Styles */
-footer {
-    background-color: #4a90e2;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+.robot-visual svg {
+    max-width: 100%; /* Responsive sizing */
+    height: auto; /* Maintain aspect ratio */
 }
