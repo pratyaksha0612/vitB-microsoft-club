@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #aae9f2; /* Light blue background */
+    background-color: #e0f7fa; /* Light blue background */
     font-family: 'Montserrat', sans-serif; /* Elegant font */
     color: #333;
     margin: 0;
@@ -9,7 +9,7 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #1d5ba1; /* Soft blue for the header */
+    background-color: #4a90e2; /* Soft blue for the header */
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -32,12 +32,13 @@ nav a {
 
 /* Hero Section */
 .hero {
-    background-color: #5ba0d8; /* Lighter pastel blue */
+    background-color: #bbdefb; /* Lighter pastel blue */
     padding: 3rem 1rem; /* Increased padding */
     text-align: center;
     border-radius: 8px;
     margin: 1rem 0; /* Margin between sections */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s; /* Fade-in animation */
 }
 
 /* Dark Blue Headings */
@@ -59,13 +60,14 @@ nav a {
 }
 
 .member-card {
-    background-color: #91c2ff; /* White background for cards */
+    background-color: #fff; /* White background for cards */
     border-radius: 8px;
     margin: 1rem;
     padding: 1rem;
     width: 300px; /* Fixed width for member cards */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s; /* Transition for hover effect */
+    animation: slideIn 0.5s; /* Slide-in animation */
 }
 
 .member-card:hover {
@@ -94,24 +96,24 @@ nav a {
 
 /* Gallery Section */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid; /* Use grid layout for better alignment */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 1rem; /* Space between grid items */
     margin-top: 2rem;
     padding: 2rem 1rem;
 }
 
 .gallery-item {
-    margin: 1rem;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Start as invisible for fade-in effect */
+    animation: fadeIn 0.5s forwards; /* Fade-in animation */
 }
 
 .gallery-item img {
-    width: 300px; /* Fixed width for gallery images */
-    height: 200px; /* Fixed height for gallery images */
-    object-fit: cover; /* Maintain aspect ratio */
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease; /* Transition for hover effect */
 }
 
@@ -126,9 +128,40 @@ nav a {
     margin-top: 1rem; /* Add some space above */
 }
 
-.robot-visual svg {
+.robot-visual img {
     max-width: 100%; /* Responsive sizing */
     height: auto; /* Maintain aspect ratio */
+    animation: bounce 1s infinite alternate; /* Bounce animation */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
 }
 
 /* Responsive Styles */
