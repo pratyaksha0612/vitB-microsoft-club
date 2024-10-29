@@ -1,7 +1,9 @@
 /* General Styles */
 body {
-    background-color: #e0f7fa; /* Light blue background */
-    font-family: 'Montserrat', sans-serif; /* Elegant font */
+    background-color: #e0f7fa;
+    /* Light blue background */
+    font-family: 'Montserrat', sans-serif;
+    /* Elegant font */
     color: #333;
     margin: 0;
     padding: 0;
@@ -9,7 +11,8 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #4a90e2; /* Soft blue for the header */
+    background-color: #4a90e2;
+    /* Soft blue for the header */
     color: #fff;
     padding: 1rem;
     text-align: center;
@@ -18,36 +21,57 @@ header {
 
 /* Header Site Name */
 header h1 {
-    font-size: 3rem; /* Increased site name size */
-    margin: 0; /* Remove default margin */
+    font-size: 3rem;
+    /* Increased site name size */
+    margin: 0;
+    /* Remove default margin */
 }
 
 /* Navigation Links */
 nav a {
-    color: #fff; /* White text for links */
-    margin: 0 1rem; /* Margin between links */
+    color: #fff;
+    /* White text for links */
+    margin: 0 1rem;
+    /* Margin between links */
     text-decoration: none;
     font-weight: bold;
 }
 
+
 /* Hero Section */
 .hero {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2)), /* Light overlay */
-                linear-gradient(to right, #4a90e2, #bbdefb); /* Crisscross gradient */
+    height: 400px;
+    /* Adjust height as desired */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2)),
+        /* Light overlay */
+        linear-gradient(to right, #2762a6, #4c7a9f);
+    /* Crisscross gradient */
+    position: relative;
+    /* Allows positioning of child elements */
+    display: flex;
+    /* For centering content */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
 }
-
 
 /* Dark Blue Headings */
 .dark-blue-heading {
-    color: #001f33; /* Darkest blue color for headings */
-    font-size: 2.5rem; /* Increased size for better visibility */
-    margin-right: 1rem; /* Reduced space between text and gradient */
+    color: #001f33;
+    /* Darkest blue color for headings */
+    font-size: 2.5rem;
+    /* Increased size for better visibility */
+    margin-right: 1rem;
+    /* Reduced space between text and gradient */
 }
 
 /* Text Container */
 .text-container {
-    max-width: 50%; /* Limit width of the text container */
-    z-index: 1; /* Ensure text appears above gradient */
+    max-width: 50%;
+    /* Limit width of the text container */
+    z-index: 1;
+    /* Ensure text appears above gradient */
 }
 
 
@@ -64,86 +88,127 @@ nav a {
 }
 
 .member-card {
-    background-color: #a1c7ec; /* White background for cards */
+    background-color: #a1c7ec;
+    /* White background for cards */
     border-radius: 8px;
     margin: 1rem;
     padding: 1rem;
-    width: 300px; /* Fixed width for member cards */
+    width: 300px;
+    /* Fixed width for member cards */
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s; /* Transition for hover effect */
-    animation: slideIn 0.5s; /* Slide-in animation */
+    transition: transform 0.3s;
+    /* Transition for hover effect */
+    animation: slideIn 0.5s;
+    /* Slide-in animation */
 }
 
 .member-card:hover {
-    transform: scale(1.05); /* Scale effect on hover */
+    transform: scale(1.05);
+    /* Scale effect on hover */
 }
 
 /* Member Photo */
 .member-photo {
-    width: 150px; /* Fixed width */
-    height: 150px; /* Fixed height */
-    object-fit: cover; /* Maintain aspect ratio while filling the space */
-    margin-bottom: 1rem; /* Space below the photo */
+    width: 150px;
+    /* Fixed width */
+    height: 150px;
+    /* Fixed height */
+    object-fit: cover;
+    /* Maintain aspect ratio while filling the space */
+    margin-bottom: 1rem;
+    /* Space below the photo */
 }
+
 
 /* Events Section */
 .events {
-    border: 1px solid #4a90e2; /* Border to match member section */
-    border-radius: 10px; /* Slightly larger border radius */
-    background-color: #ffffff; /* White background for contrast */
-    padding: 2rem; /* Padding inside the section */
-    margin: 2rem 1rem; /* Margin around the section */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
-    animation: fadeIn 1s; /* Fade-in animation */
+    border: 1px solid #4a90e2;
+    /* Border to match member section */
+    border-radius: 20px;
+    /* Larger border radius for rounded corners */
+    background-color: #ffffff;
+    /* White background for contrast */
+    padding: 2rem;
+    /* Padding inside the section */
+    margin: 3rem auto;
+    /* Increased margin for top/bottom, auto for center alignment */
+    max-width: 800px;
+    /* Set a max-width for better alignment */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    /* Deeper shadow for depth */
+    animation: fadeIn 1s;
+    /* Fade-in animation */
 }
 
 /* Event Card */
 .event-card {
-    border: 1px solid #e0e0e0; /* Light grey border for individual event card */
-    border-radius: 10px; /* Rounded corners */
-    padding: 1.5rem; /* Increased padding inside event card */
-    margin: 1.5rem 0; /* Increased margin between event cards */
-    background-color: #b7d7f8; /* Light background color for event cards */
-    text-align: left; /* Align text to the left */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling effect and shadow on hover */
-    position: relative; /* Allow absolute positioning of elements */
+    border: 1px solid #e0e0e0;
+    /* Light grey border for individual event card */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 1.5rem;
+    /* Increased padding inside event card */
+    margin: 1.5rem 0;
+    /* Increased margin between event cards */
+    background-color: #f9f9f9;
+    /* Light background color for event cards */
+    text-align: left;
+    /* Align text to the left */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth scaling effect and shadow on hover */
+    position: relative;
+    /* Allow absolute positioning of elements */
 }
 
 .event-card:hover {
-    transform: translateY(-5px); /* Lift the card on hover */
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+    transform: translateY(-5px);
+    /* Lift the card on hover */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow on hover */
 }
 
 /* Event Title */
 .event-title {
-    color: #001f33; /* Dark blue color for event titles */
-    font-size: 1.75rem; /* Increased font size for titles */
-    margin-bottom: 0.5rem; /* Margin below title */
-    font-weight: bold; /* Bold font for titles */
-    text-transform: uppercase; /* Uppercase for elegance */
+    color: #001f33;
+    /* Dark blue color for event titles */
+    font-size: 1.75rem;
+    /* Increased font size for titles */
+    margin-bottom: 0.5rem;
+    /* Margin below title */
+    font-weight: bold;
+    /* Bold font for titles */
+    text-transform: uppercase;
+    /* Uppercase for elegance */
 }
 
 /* Event Date */
 .event-date {
-    color: #555; /* Grey color for event dates */
-    font-style: italic; /* Italic style for date */
-    margin-bottom: 1rem; /* Margin below date */
+    color: #555;
+    /* Grey color for event dates */
+    font-style: italic;
+    /* Italic style for date */
+    margin-bottom: 1rem;
+    /* Margin below date */
 }
 
 /* Event Description */
 .event-description {
-    color: #333; /* Darker grey for description */
-    line-height: 1.6; /* Improved line height for readability */
+    color: #333;
+    /* Darker grey for description */
+    line-height: 1.6;
+    /* Improved line height for readability */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .event-card {
-        margin: 1rem 0; /* Adjust margin for smaller screens */
+        margin: 1rem 0;
+        /* Adjust margin for smaller screens */
     }
 
     .event-title {
-        font-size: 1.5rem; /* Adjust title size for smaller screens */
+        font-size: 1.5rem;
+        /* Adjust title size for smaller screens */
     }
 }
 
@@ -151,9 +216,12 @@ nav a {
 
 /* Gallery Section */
 .gallery {
-    display: grid; /* Use grid layout for better alignment */
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 1rem; /* Space between grid items */
+    display: grid;
+    /* Use grid layout for better alignment */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    /* Responsive grid */
+    gap: 1rem;
+    /* Space between grid items */
     margin-top: 2rem;
     padding: 2rem 1rem;
 }
@@ -162,18 +230,24 @@ nav a {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    opacity: 0; /* Start as invisible for fade-in effect */
-    animation: fadeIn 0.5s forwards; /* Fade-in animation */
+    opacity: 0;
+    /* Start as invisible for fade-in effect */
+    animation: fadeIn 0.5s forwards;
+    /* Fade-in animation */
 }
 
 .gallery-item img {
-    width: 100%; /* Full width for images */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease; /* Transition for hover effect */
+    width: 100%;
+    /* Full width for images */
+    height: auto;
+    /* Maintain aspect ratio */
+    transition: transform 0.3s ease;
+    /* Transition for hover effect */
 }
 
 .gallery-item img:hover {
-    transform: scale(1.05); /* Zoom effect on hover */
+    transform: scale(1.05);
+    /* Zoom effect on hover */
 }
 
 
@@ -182,6 +256,7 @@ nav a {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -191,6 +266,7 @@ nav a {
     from {
         transform: translateY(0);
     }
+
     to {
         transform: translateY(-10px);
     }
@@ -199,16 +275,21 @@ nav a {
 /* Responsive Styles */
 @media (max-width: 768px) {
     .hero {
-        flex-direction: column; /* Stack robot and text on smaller screens */
-        align-items: center; /* Center items */
-        text-align: center; /* Center text */
+        flex-direction: column;
+        /* Stack robot and text on smaller screens */
+        align-items: center;
+        /* Center items */
+        text-align: center;
+        /* Center text */
     }
 
     .dark-blue-heading {
-        margin-right: 0; /* Remove margin for smaller screens */
+        margin-right: 0;
+        /* Remove margin for smaller screens */
     }
 
     .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust for smaller screens */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        /* Adjust for smaller screens */
     }
 }
