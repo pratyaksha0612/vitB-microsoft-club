@@ -54,7 +54,62 @@ nav a {
     /* Center horizontally */
     align-items: center;
     /* Center vertically */
+    animation: fadeIn 1s;
+    /* Fade-in animation */
 }
+
+/* Animation for Hero Elements */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+        /* Start hidden */
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        /* End fully visible */
+    }
+}
+
+.hero h1,
+.hero p {
+    animation: slideIn 1s ease forwards;
+    /* Apply slide-in animation */
+    opacity: 0;
+    /* Start hidden */
+}
+
+.hero h1 {
+    animation-delay: 0.2s;
+    /* Delay for main heading */
+}
+
+.hero p {
+    animation-delay: 0.4s;
+    /* Delay for paragraph */
+}
+
+/* Additional styling for hero text */
+.hero h1 {
+    font-size: 3rem;
+    /* Large size for main heading */
+    color: white;
+    /* Change as per design */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Optional text shadow for contrast */
+}
+
+.hero p {
+    font-size: 1.5rem;
+    /* Size for subtitle or description */
+    color: white;
+    /* Change as per design */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    /* Optional text shadow for contrast */
+}
+
 
 /* Dark Blue Headings */
 .dark-blue-heading {
