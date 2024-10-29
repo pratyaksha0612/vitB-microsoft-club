@@ -49,6 +49,20 @@ nav a {
     margin-right: 1rem; /* Reduced space between text and robot */
 }
 
+/* Robot Visual */
+.robot-visual {
+    display: flex;
+    justify-content: center; /* Center the robot */
+    margin-left: auto; /* Push to the right */
+}
+
+.robot-visual img {
+    max-width: 250px; /* Increased size of the robot image */
+    height: auto; /* Maintain aspect ratio */
+    animation: bounce 1s infinite alternate; /* Bounce animation */
+    margin-right: 0.5rem; /* Bring robot closer to text */
+}
+
 /* Members Section */
 .members {
     padding: 2rem 1rem;
