@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #c7f4fa; /* Light blue background */
+    background-color: #aae9f2; /* Light blue background */
     font-family: 'Montserrat', sans-serif; /* Elegant font */
     color: #333;
     margin: 0;
@@ -9,38 +9,41 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #236dc2; /* Soft blue for the header */
-    color: #f5f5f8;
+    background-color: #1d5ba1; /* Soft blue for the header */
+    color: #fff;
     padding: 1rem;
     text-align: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* Header Site Name */
+header h1 {
+    font-size: 3rem; /* Increased site name size */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navigation Links */
+nav a {
+    color: #fff; /* White text for links */
+    margin: 0 1rem; /* Margin between links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* Hero Section */
 .hero {
-    background-color: #bbdefb; /* Lighter pastel blue */
+    background-color: #5ba0d8; /* Lighter pastel blue */
     padding: 3rem 1rem; /* Increased padding */
     text-align: center;
     border-radius: 8px;
     margin: 1rem 0; /* Margin between sections */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.hero h2 {
-    font-size: 2.5rem; /* Larger heading */
-}
-
-.hero p {
-    font-size: 1.2rem; /* Larger font for the paragraph */
-}
-
-/* Events Section */
-.events {
-    padding: 2rem 1rem;
-    text-align: center;
-}
-
-.events h2 {
-    font-size: 2rem; /* Larger heading */
+/* Dark Blue Headings */
+.dark-blue-heading {
+    color: #001f33; /* Darkest blue color for headings */
+    font-size: 2.5rem; /* Increased size for better visibility */
 }
 
 /* Members Section */
@@ -49,40 +52,44 @@ header {
     text-align: center;
 }
 
-.members h2 {
-    font-size: 2rem; /* Larger heading */
-}
-
 .members-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
     justify-content: center;
-    margin-top: 1rem;
 }
 
-/* Member Card Styling */
 .member-card {
-    background-color: #c7f3f1f8;
+    background-color: #91c2ff; /* White background for cards */
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    margin: 1rem;
     padding: 1rem;
-    width: 220px; /* Consistent width */
-    transition: transform 0.3s ease;
+    width: 300px; /* Fixed width for member cards */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Transition for hover effect */
 }
 
 .member-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Scale effect on hover */
 }
 
-/* Consistent Photo Sizing */
+/* Member Photo */
 .member-photo {
-    width: 100px; /* Fixed width */
-    height: 100px; /* Fixed height */
-    object-fit: cover; /* Crop images to fit */
-    border-radius: 50%; /* Circular photos */
-    margin-bottom: 0.75rem;
+    width: 100%; /* Full width for photos */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for photos */
+}
+
+/* Events Section */
+.events {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* Event Countdown Timer */
+.countdown {
+    font-weight: bold; /* Make countdown bold */
+    color: #4a90e2; /* Color for countdown text */
+    font-size: 1.5rem; /* Font size for countdown */
 }
 
 /* Gallery Section */
@@ -105,13 +112,14 @@ header {
     width: 300px; /* Fixed width for gallery images */
     height: 200px; /* Fixed height for gallery images */
     object-fit: cover; /* Maintain aspect ratio */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; /* Transition for hover effect */
 }
 
 .gallery-item img:hover {
     transform: scale(1.05); /* Zoom effect on hover */
 }
 
+/* Robot Visual */
 .robot-visual {
     display: flex;
     justify-content: center; /* Center the robot */
@@ -123,10 +131,15 @@ header {
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Footer Styles */
-footer {
-    background-color: #529df3;
-    color: #fafafa;
-    text-align: center;
-    padding: 1rem;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .members-grid {
+        flex-direction: column; /* Stack member cards on smaller screens */
+        align-items: center; /* Center the member cards */
+    }
+
+    .gallery-item img {
+        width: 100%; /* Make gallery images full width on small screens */
+        height: auto; /* Maintain aspect ratio */
+    }
 }
