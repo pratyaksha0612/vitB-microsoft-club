@@ -3,36 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VITB Microsoft Club - Home</title>
+    <title>VITB Microsoft Club</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
         <h1>VITB Microsoft Club</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="events.html">Events</a>
-            <a href="members.html">Members</a>
+            <a href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#members">Members</a>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <h2 style="position: relative; z-index: 1;">Welcome to VITB Microsoft Club</h2>
-            <p style="position: relative; z-index: 1;">Your gateway to technology and innovation.</p>
-        </section>
-        
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to VITB Microsoft Club</h2>
+        <p>Your gateway to technology and innovation.</p>
+    </section>
 
-        <section class="about">
-            <h3>About Us</h3>
-            <p>We are a group of tech enthusiasts at VITB dedicated to learning and sharing knowledge about Microsoft technologies.</p>
-        </section>
-    </main>
+    <!-- Events Section -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <p>Stay tuned for the latest events hosted by our club!</p>
+    </section>
+
+    <!-- Members Section -->
+    <section id="members" class="members">
+        <h2>Meet Our Team</h2>
+        <p>Get to know the people behind the VITB Microsoft Club.</p>
+        
+        <div class="members-grid">
+            <div class="member-card">
+                <img src="images/member1.jpeg" alt="Amy" class="member-photo">
+                <h3>Amy</h3>
+                <p class="role">President</p>
+                <p class="contact"><strong>Email:</strong> Amy@example.com</p>
+            </div>
+
+            <div class="member-card">
+                <img src="images/member2.png" alt="Jane Smith" class="member-photo">
+                <h3>Jane Smith</h3>
+                <p class="role">Vice President</p>
+                <p class="contact"><strong>Email:</strong> jane@example.com</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2023 VITB Microsoft Club</p>
     </footer>
 
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

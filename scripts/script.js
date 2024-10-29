@@ -1,3 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Welcome to VITB Microsoft Club!");
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
