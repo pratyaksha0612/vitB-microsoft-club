@@ -32,16 +32,10 @@ nav a {
 
 /* Hero Section */
 .hero {
-    display: flex; /* Use flexbox to align text and gradient */
-    align-items: center; /* Center vertically */
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5)), /* Light overlay */
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2)), /* Light overlay */
                 linear-gradient(to right, #4a90e2, #bbdefb); /* Crisscross gradient */
-    padding: 3rem 1rem; /* Increased padding */
-    border-radius: 8px;
-    margin: 1rem 0; /* Margin between sections */
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 1s; /* Fade-in animation */
 }
+
 
 /* Dark Blue Headings */
 .dark-blue-heading {
@@ -92,18 +86,33 @@ nav a {
     margin-bottom: 1rem; /* Space below the photo */
 }
 
-/* Events Section */
-.events {
-    padding: 2rem 1rem;
-    text-align: center;
+/* Event Card */
+.event-card {
+    border: 1px solid #7cb1ed; /* Border for individual event card */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem; /* Padding inside event card */
+    margin: 1rem 0; /* Margin between event cards */
+    background-color: #f0f4ff; /* Light background color for event cards */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s; /* Smooth scaling effect on hover */
 }
 
-/* Event Countdown Timer */
-.countdown {
-    font-weight: bold; /* Make countdown bold */
-    color: #4a90e2; /* Color for countdown text */
-    font-size: 1.5rem; /* Font size for countdown */
+.event-card:hover {
+    transform: scale(1.02); /* Slightly enlarge card on hover */
 }
+
+/* Event Title */
+.event-title {
+    color: #001f33; /* Dark blue color for event titles */
+    font-size: 1.5rem; /* Font size for event titles */
+}
+
+/* Event Date */
+.event-date {
+    color: #555; /* Grey color for event dates */
+}
+
+
 
 /* Gallery Section */
 .gallery {
